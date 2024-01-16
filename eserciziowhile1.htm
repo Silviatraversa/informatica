@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esercizio while 1</title>
+</head>
+<body>
+
+<button onclick="ripetiJuve()">Clicca per ripetere Juve 100 volte</button>
+
+<script>
+  function ripetiJuve() {
+    var outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = ""; 
+
+    for (var i = 0; i < 100; i++) {
+      outputDiv.innerHTML += "Juve merda<br>";
+    }
+  }
+</script>
+
+<div id="output"></div>
+
+</body>
+</html>
