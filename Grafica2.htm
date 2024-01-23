@@ -21,17 +21,17 @@
   <button onclick="creaDiv()">Genera Div</button>
 
   <script>
-    function Div() {
+    function creaDiv() {
       const numeroDiv = document.getElementById('numeroDiv').value;
       const container = document.getElementById('container');
 
-    
+   
       container.innerHTML = '';
 
-     
+    
       for (let i = 0; i < numeroDiv; i++) {
         const div = document.createElement('div');
-        div.className = 'div';
+        div.className = 'generated-div';
         div.style.backgroundColor = getRandomColor();
         container.appendChild(div);
       }
