@@ -1,0 +1,43 @@
+
+SILVIA TRAVERSA <silvia.traversa@jcmaxwell.it>
+mar 21 mag, 13:34 (2 giorni fa)
+a me
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio verifica 1</title>
+    <style>
+        .square {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Genera Quadrati</h1>
+    <label for="numberInput">Inserisci un numero: </label>
+    <input type="number" id="numberInput" min="1" />
+    <button onclick="generateSquares()">Genera</button>
+    <div id="squaresContainer"></div>
+
+    <script>
+        function generateSquares() {
+            const n = document.getElementById('numberInput').value;
+            const container = document.getElementById('squaresContainer');
+            container.innerHTML = ''; // Pulisce il contenitore
+
+            for (let i = 0; i < n; i++) {
+                const square = document.createElement('div');
+                square.className = 'square';
+                container.appendChild(square);
+            }
+        }
+    </script>
+</body>
+</html>
